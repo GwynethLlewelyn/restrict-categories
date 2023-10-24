@@ -568,7 +568,7 @@ class RestrictCategories {
 	 */
 	public function cat_filters( $categories ){
 		// Clean up the category list
-		$this->cat_list = rtrim( $categories, ',' );
+		$this->cat_list = rtrim( $categories ?? '', ',' );
 
 		// If there are no categories, don't do anything
 		if ( empty( $this->cat_list ) )
