@@ -52,11 +52,11 @@ class RestrictCategories {
     }
 
     /**
-     * Private unserialize method to prevent unserializing of the instance.
+     * Public unserialize method to prevent unserializing of the instance.
      *
      * @return void
      */
-    private function __wakeup() {
+    public function __wakeup() {
     }
 
 	/**
